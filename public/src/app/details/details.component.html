@@ -1,0 +1,16 @@
+  <button [routerLink]="['/']">Home</button>
+  <div class="jumbotron">
+    Pet Name:
+    <h1>{{getShelter.name}}</h1>
+    Pet Type:
+    <h3>{{getShelter.type}}</h3>
+    Pet Description:
+    <p class="lead">{{getShelter.description}}</p>
+    Pet Skills:
+    <p>{{getShelter.skill1}}, {{getShelter.skill2}}, {{getShelter.skill3}}</p>
+    <hr class="my-4">
+    <button>Like this pet!</button>
+    <button [routerLink]="['/']" (click)="delShelter(getShelter._id)">Adopt this pet!</button>
+  </div>
+        
+        
